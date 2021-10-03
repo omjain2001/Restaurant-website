@@ -1,3 +1,8 @@
+html,
+body {
+  background-color: #f3fdff;
+}
+
 .menu {
   font-weight: 800;
   text-align: center;
