@@ -1,0 +1,91 @@
+.pricing_title {
+  font-weight: 800;
+  text-align: center;
+  margin: 2rem 0rem 0.5rem 0rem;
+  color: #03045e;
+  text-transform: uppercase;
+}
+
+.pricing_tagline {
+  font-family: "Bonheur Royale", cursive;
+  text-align: center;
+  color: #023e8a;
+}
+
+.pricing_card {
+  border-radius: 20px;
+  border: 1px solid rgb(221, 221, 221);
+  transition: all ease-in-out 0.3s;
+  background-color: #caf0f8;
+}
+
+.pricing_card:hover {
+  box-shadow: 0px 0px 10px rgb(185, 185, 185);
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.pricing_img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.pricing_text {
+  text-align: justify;
+}
+
+.pricing-card-title {
+  color: #03045e;
+}
+
+.pricing-card-btn {
+  background-color: #023e8a;
+  color: #ffffff;
+  transition: all ease-in-out 0.5s;
+  font-size: 20px;
+}
+
+.pricing-card-btn:hover {
+  background-color: #00295e;
+  color: #ffffff;
+  transition: all ease-in-out 0.5s;
+}
+
+.facility_list li {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.facility_list li i {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.facility_list li i.check {
+  color: green;
+}
+
+.facility_list li i.close {
+  color: red;
+}
+
+.divider {
+  content: "";
+  display: block;
+  height: 0.5px;
+  width: 95%;
+  align-self: center;
+  background-color: #03045e;
+}
+
+.disabled_text {
+  color: rgb(192, 189, 189);
+}
+
+.price {
+  color: #03045e;
+}
+
+.pricing_details {
+  color: #03045e;
+}
