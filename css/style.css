@@ -1,10 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    
-    
-    
+    box-sizing: border-box;  
 }
 
 html{
@@ -14,19 +11,9 @@ html{
     color: black;
     background-color: white;
     text-rendering: optimizeLegibility;
-    
-    
-    
-    
-    
+  
 }
 
-.row{
-    
-    max-width: 1140px;
-    margin: 0 auto;
-    
-}
 
 .bimg{
     
@@ -35,13 +22,11 @@ html{
     left: 50%;
     transform: translate(-50%,-50%);
     width: 1140px;
-    
-    
-    
+ 
 }
 
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/Idli....jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/foodcover.jpg);
     background-size: cover;
     background-attachment:fixed;
     background-position: center;
@@ -55,16 +40,14 @@ h1{
     font-size: 240%;
     letter-spacing: 1px;
     word-spacing: 10px;
-    text-transform: uppercase;
+
     font-weight: 300;
-    color: white;
-    
-    
+    color: rgb(255, 255, 255);
+ 
 }
 
 .btn,
-input[type=submit],
-input[type=reset]{
+input[type=submit]{
     
     display: inline-block;
     margin-right: 30px;
@@ -75,109 +58,40 @@ input[type=reset]{
     
 }
 
-.btn-full:link,
-.btn-full:visited,
-input[type=submit]{
-    
-    background-color: #e67e22;
-    color: #fff;
-    border: 2px solid #e67e22;
-    
-    
-    
-}
-
-
 .btn-ghost:link,
-.btn-ghost:visited,
-input[type=reset]{
+.btn-ghost:visited{
     
-    border: 2px solid #e67e22;
-    color: #e67e22;
-    
-    
-    
+    border: 2px solid #ffffff;
+    color: #ffffff;
+        
 }
 
-.btn-full:hover,
-.btn-full:active,
-input[type=submit]:hover,
-input[type=submit]:active
-{
-    
-    background-color: #cf6d17;
-    color: #fff;
-    border: 2px solid #cf6d17;
-    transition: background-color 0.2s;
-    
-    
-}
 
 
 .btn-ghost:hover,
-.btn-ghost:active,
-input[type=reset]:hover,
-input[type=reset]:active 
+.btn-ghost:active 
 {
     
-    border: 2px solid #cf6d17;
-    color: #fff;
-    background-color: #cf6d17;
+    border: 2px solid #ffffff;
+    color: rgb(22, 22, 22);
+    background-color: #ffffff;
     transition: background-color 0.2s;
-    
-    
-    
+ 
 }
 
 .logo{
     
-    height: 100px;
-    width: 100px;
-    margin: auto;
-    float: left;
-    margin-top: 20px;
+    height: 80px;
+    width: 80px;
+    margin-right: 10px;
+    margin-bottom: 5px;
     border-radius: 190px;
     
     
 }
 
-.main-nav{
-    
-    float: right;
-    margin-top: 50px;
-     
-    
-}
 
-.main-nav li{
-    
-    display: inline-block;
-    margin-left: 50px;
-    
-    
-    
-    
-}
 
-.main-nav li a{
-    text-decoration: none;
-    color: greenyellow;
-    font-size: 25px;
-    font-weight: 500;
-    padding-bottom: 2px;
-    /*border-bottom: 2px solid transparent;*/
-    
-    
-}
-
-.main-nav li a:active,
-.main-nav li a:hover{
-    
-    border-bottom: 2px solid rgba(154, 255, 0, 0.84);
-    transition: border-bottom 0.2s;
-    
-    
-}
 
 h2{
     
@@ -189,11 +103,12 @@ h2{
     word-spacing: 2px;
 }
 
+
 h2:after {
     
     display: block;
     width: 10%;
-    background-color: #e67e22;
+    background-color: #000000;
     height: 2px;
     content: " ";
     margin-left: 45%;
@@ -249,105 +164,19 @@ h3{
 
 section{
     
-    padding: 80px;0px;
+    padding: 80px;
 }
 
 .icon-big{
     
     font-size: 300%;
     display: block;
-    color: #e67e22;
-    text-align: center;
-}
-
-.box>h3,p{
-    
+    color: #023E8A;
     text-align: center;
 }
 
 
 
-.meals{
-    
-    margin-top: 20px;
-    padding: 0px 0px;
-    /*margin-bottom: 40px;*/    
-    
-}
-
-
-
-
-.meals-showcase{
-    
-    width: 100%;
-    list-style: none;
-    padding: 0px 0px;
-    margin: 0px 0px;
-    
-    
-    
-}
-
-.meal-photo li{
-    
-    
-    display: block;
-    float: left;
-    width: 25%;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    background-color: black;
-    overflow: hidden;
-    
-    
-   
-    
-}
-
-
-
-.meal-photo img{
-    
-    width: 100%;
-    height: 275px;
-    margin: 0px 0px;
-    padding: 0px 0px;
-    transform: scale(1.15);
-    opacity: 0.5;
-    
-    
-    
-
-}
-
-
-.meal-photo img:hover{
-    
-    width: 100%;
-    height: 275px;
-    margin: 0px 0px;
-    padding: 0px 0px;
-    transform: scale(1.03);
-    transition: transform 0.5s;
-    opacity: 1;
-    cursor: pointer;
-    
-}
-
-
-.iphone{
-    
-    height: 500px;
-    width: 500px;
-    margin:auto;
-}
-
-.sec-3{
-    padding-top: 20px;
-    padding-bottom: 0px;
-    background-color: #ededed;
-}
 
 .steps p{
     
@@ -363,53 +192,10 @@ section{
 
 
 
-.steps div{
-    
-    display: inline-block;
-    border: 2px solid #e67e22;
-    border-radius: 50%;
-    text-align: center;
-    height: 50px;
-    width: 50px;
-    font-size: 180%;
-    float: left;
-    margin-right: 20px;
-    color: #e67e22;
-    
-    
-    
-}
-
-.btn-app img{
-    
-    width: 150px;
-    height: 50px;
-    margin-top: 20px;
-    margin-right: 20px;
-    float: left;
-    display: inline-block;
-}
-
-.logo-iphone{
-    
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    border-radius: 190px;
-    top: 100px;
-    left: 200px;
-    /*transform: translate(0,-350%);*/
-    
-}
-
 .box2{
     position: relative;
 }
 
-/*.steps{
-    display: block;
-    margin-top: 50px;
-}*/
 
 .block{
     display: block;
@@ -419,21 +205,7 @@ section{
 .block p{
     text-align: left;
 }
-.text-iphone {
-    
-    position:absolute;
-    height: 100px;
-    width: 200px;
-    color: white;
-    font-size: 28px;
-    font-family: Algerian;
-    line-height: 40px;
-    top: 250px;
-    left: 152px;
-    letter-spacing: 2px;
-    
-    color: rgb(159, 237, 68);
-}
+
 
 .clearfix{zoom:1}
 .clearfix:after {
@@ -446,16 +218,17 @@ section{
 
 .cities{
     list-style: none;
+    
 }
 
 .cities li{
     float: left;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .cityimg img{
     
-    width: 225px;
+    width: 235px;
     margin-top: 40px;
 }
 
@@ -469,29 +242,21 @@ section{
 
 h5{
     margin-left: 2px;
-    line-height: 30px;
-    
+    line-height: 10px;
+    font-size: x-large;
 } 
 
 .section-cities{
-    
+
     padding-top: 0px;
 }
 
-a:link,
-a:visited{
-    text-decoration: none;
-    color: #e67e22;
-    border-bottom: 2px solid #e67e22;
-    letter-spacing: 0.3px;
-    
-}
 
 a:hover,
 a:active{
     
     text-decoration: none;
-    color: #cf6d17;
+    color: #ffffff;
     letter-spacing: 0.3px;
     border-bottom: 0px;
     transition: color 0.2s;
@@ -555,64 +320,13 @@ cite{
 }
 
 
-.section-plan-and-prize{
-    
-    background-color: #ededed;
-}
-
-.plan-prize{
-    
-    background-color: rgb(229, 229, 229);
-    display: block;
-    padding: 10px 20px;
-    height: 150px;
-    
-}
-
-.prize{
-    font-size: 50px;
-    color: #e67e22;
-}
 
 
 
-.plan-prize sub{
-    
-    font-size: 15px;
-    word-spacing: 2px;
-    
-    font-weight: 600;
-}
 
-.plan-services{
-    
-    padding: 10px 20px;
-    background-color: white;
-    list-style:none;
-    line-height: 30px;
-    border-bottom: 1px solid rgb(229, 229, 229);
-}
 
-.plan-services i{
-    
-    float: left;
-    display: block;
-    margin-right: 10px;
-    
-}
 
-.plan-signup{
-    
-    text-align: center;
-    padding: 20px 20px;
-    background-color: white;
-}
 
-.plan-box{
-    
-    box-shadow: 10px 10px 10px grey;
-    margin-right: 20px;
-}
 
 .contact-form{
     
@@ -648,17 +362,12 @@ input[type=checkbox]{
     margin-top: 10px;
 }
 
-input[type=reset]{
-    
-    background-color: white;
-    margin-right: 60px;
-    margin-top: 20px;
-    cursor: pointer;    
-}
+
 
 input[type=submit]
 {
-    
+    color: white;
+    background-color: #85949c;
     margin-left: 110px;
     margin-top: 20px;
     cursor: pointer;
@@ -693,18 +402,17 @@ footer{
 .social-nav a:link,
 .social-nav a:visited{
     
-    color: #fcf9b3;
+    color: #ffffff;
     text-decoration: none;
     border:none;
 }
 
 .footer-nav a:hover,
-.footer-nav a:active,
-{
+.footer-nav a:active{
     
-    color: #fcf9b3;
+    color: #48CAE4;
     text-decoration: none;
-    border-bottom: 2px solid #fcf9b3;
+    border-bottom: 2px solid #48CAE4;
 }
 
 
@@ -747,15 +455,33 @@ footer{
     transform: translate(-50%);
 }
 
+.heading{
+    margin-top: 20px; 
+    font-size: 240%;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    font-family: "Sofia", sans-serif;
+}
 
 
+.contact_details{
+    color: rgba(207, 207, 207, 0.808)  ;
+}
+
+#tagline{
+    color:#d4d6d6;
+    font-family: 'Ephesis', cursive;
+    margin-bottom: 40px;
+}
 
 
+.nav-link{
+    font-size: 120%;
+}
 
-
-
-
-
-
-
-
+.send{
+    
+}
