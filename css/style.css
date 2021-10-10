@@ -26,7 +26,7 @@ html{
 }
 
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/foodcover.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/foodcover2.jpg);
     background-size: cover;
     background-attachment:fixed;
     background-position: center;
@@ -37,10 +37,9 @@ header{
 
 h1{
     
-    font-size: 240%;
+    font-size: 260%;
     letter-spacing: 1px;
     word-spacing: 10px;
-
     font-weight: 300;
     color: rgb(255, 255, 255);
  
@@ -457,13 +456,12 @@ footer{
 
 .heading{
     margin-top: 20px; 
-    font-size: 240%;
+    font-size: 350%;
     letter-spacing: 1px;
     word-spacing: 10px;
-
     font-weight: 300;
     color: rgb(255, 255, 255);
-    font-family: "Sofia", sans-serif;
+    font-family: 'Seaweed Script', cursive;
 }
 
 
@@ -473,7 +471,7 @@ footer{
 
 #tagline{
     color:#d4d6d6;
-    font-family: 'Ephesis', cursive;
+    font-family:cursive;
     margin-bottom: 40px;
 }
 
@@ -482,6 +480,3 @@ footer{
     font-size: 120%;
 }
 
-.send{
-    
-}
