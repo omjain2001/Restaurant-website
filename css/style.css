@@ -456,10 +456,17 @@ footer{
 
 .heading{
     margin-top: 20px; 
-    font-size: 350%;
+    font-size: 250%;
     letter-spacing: 1px;
     word-spacing: 10px;
-    font-weight: 300;
+
+    color: rgb(255, 255, 255);
+    font-family:cursive;
+}
+
+#rest_name{
+    margin-top: 20px; 
+    font-size: 350%;
     color: rgb(255, 255, 255);
     font-family: 'Seaweed Script', cursive;
 }
