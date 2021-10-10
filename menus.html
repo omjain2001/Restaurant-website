@@ -135,9 +135,9 @@
                         >Green chilly</span
                       >
                     </div>
-                    <div class="text-center">
-                      <button class="btn menu-card-btn">Order Now</button>
-                    </div>
+                      <div class="text-center">
+                        <button class="btn menu-card-btn">Order Now</button>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -966,5 +966,17 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script>
+      let items = document.getElementsByClassName("menu-card-btn");
+      for(var i=0; i<items.length; i++){
+        items[i].addEventListener("click", function(){
+          const itemName = this.parentNode.parentNode.querySelector(".menu-card-title").innerHTML;
+          const itemPrice = this.parentNode.parentNode.querySelector(".menu-item-price").innerHTML.split(" ")[1];
+          const itemImage = this.parentNode.parentNode.parentNode.getElementsByClassName("menu-card-img")[0].getAttribute("src")
+          
+          window.location.href = `order.html?item=${itemName}&price=${itemPrice}&img=${itemImage}`
+        })
+      }
+    </script>
   </body>
 </html>

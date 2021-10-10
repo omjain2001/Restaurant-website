@@ -1,0 +1,54 @@
+.order-item-card {
+  background-color: #caf0f8;
+  border-radius: 10px;
+  border: 1px solid rgb(221, 221, 221);
+  padding: 10px;
+}
+
+.order-item-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #03045e;
+}
+
+.qtn-input {
+  width: 25%;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #03045e;
+  text-align: right;
+  color: #03045e;
+}
+
+.qtn-input::placeholder {
+  color: #03045e;
+}
+
+.order-item-body {
+  color: #03045e;
+}
+
+.form-row input {
+  background-color: transparent;
+  border: 1px solid #03045e;
+}
+
+.form-row input::placeholder {
+  color: #03045e;
+}
+
+.form-row label {
+  color: #03045e;
+}
+
+.order-btn {
+  background-color: #023e8a;
+  border: none;
+  transition: all ease-in-out 0.3s;
+}
+
+.order-btn:hover {
+  background-color: #00295e;
+  transition: all ease-in-out 0.3s;
+}
