@@ -19,6 +19,7 @@ body {
 }
 
 h2{
+
 	font-family: 'lato', sans-serif;
 	color: #151515;
 	font-weight: 700;
@@ -27,33 +28,29 @@ h2{
 
 p{
 	line-height: 1.6;
-	color: white;
-	font-weight:400;
+	color: rgb(230, 224, 224);
+	font-weight:300;
 }
 
 
-.banner{
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/img2.jpeg);
-	background-attachment: fixed;
-	height: 100vh;
-	width: 100%;
-}
 
 .banner .caption h2{
+
 	color: #fff;
 	font-size: 70px;
 	letter-spacing: -1px;
 }
 
 
-h2{
+#heading{
     
-    color: black;
+    color: rgb(247, 243, 243);
     font-weight: 400;
-    margin-top: 20px;
+    padding-top:90px;
+    padding-bottom: 30px;
     text-align: center;
-    text-transform: uppercase;
     word-spacing: 2px;
+    font-family: cursive;
 }
 
 
