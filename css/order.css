@@ -52,3 +52,7 @@
   background-color: #00295e;
   transition: all ease-in-out 0.3s;
 }
+
+.order-item-img {
+  border-radius: 5px;
+}

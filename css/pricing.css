@@ -94,3 +94,71 @@ body {
 .pricing_details {
   color: #03045e;
 }
+
+footer {
+  background-color: #363535;
+  height: 200px;
+  position: relative;
+}
+
+.footer-nav {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 20%;
+}
+
+.footer-nav li {
+  float: left;
+  margin-right: 40px;
+}
+
+.footer-nav a:link,
+.footer-nav a:visited,
+.social-nav a:link,
+.social-nav a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+}
+
+.footer-nav a:hover,
+.footer-nav a:active {
+  color: #48cae4;
+  text-decoration: none;
+  border-bottom: 2px solid #48cae4;
+}
+
+.footer-nav-icons {
+  display: block;
+  float: right;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+
+.footer-nav-icons li {
+  float: left;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 5px;
+  margin-left: 20px;
+  font-size: 140%;
+}
+
+.footer-para {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-family: Copperplate Gothic Bold;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
+}
