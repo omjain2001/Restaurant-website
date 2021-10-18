@@ -1,6 +1,7 @@
 html,
 body {
   background-color: #f3fdff;
+  overflow-x: hidden;
 }
 
 .pricing_title {
