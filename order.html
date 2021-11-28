@@ -66,7 +66,7 @@
                 <input
                   type="number"
                   class="form-control"
-                  id="inputEmail4"
+                  id="phone"
                   placeholder="Phone"
                 />
               </div>
@@ -176,6 +176,7 @@
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"
   ></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script>
     const url = new URL(window.location.href);
     const itemName = url.searchParams.get("item");
@@ -205,7 +206,17 @@
       .getElementsByTagName("form")[0]
       .addEventListener("submit", function (e) {
         e.preventDefault();
-        console.log(e.target);
+        const phone = document.getElementById("phone").value;
+        if (phone.length !== 10) {
+          swal({
+            title: "Error",
+            text: "Invalid phone number",
+            button: {
+              text: "OK",
+            },
+            icon: "error",
+          });
+        }
       });
   </script>
 </html>

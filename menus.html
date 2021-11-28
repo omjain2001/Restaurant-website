@@ -23,35 +23,48 @@
     />
 
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-    crossorigin="anonymous"
-  />
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
     <link href="css/menu.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
   </head>
   <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
-      <div class="container-fluid" >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
         <span class="navbar-brand" href="#">
-            <img               
+          <img
             src="Resources/img/l2.png"
             alt="Veggiefood logo"
-            width="30" 
-            height="24" 
-            class="d-inline-block
-            align-top logo "
-            > 
-
+            width="30"
+            height="24"
+            class="d-inline-block align-top logo"
+          />
         </span>
         <button
           class="navbar-toggler"
@@ -197,9 +210,9 @@
                         >Green chilly</span
                       >
                     </div>
-                      <div class="text-center">
-                        <button class="btn menu-card-btn">Order Now</button>
-                      </div>
+                    <div class="text-center">
+                      <button class="btn menu-card-btn">Order Now</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1018,13 +1031,11 @@
                   </div>
                 </div>
               </div>
+            </div>
           </div>
         </div>
-        </div>
-      </div>  
+      </div>
     </div>
-
-    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -1033,55 +1044,71 @@
     ></script>
     <script>
       let items = document.getElementsByClassName("menu-card-btn");
-      for(var i=0; i<items.length; i++){
-        items[i].addEventListener("click", function(){
-          const itemName = this.parentNode.parentNode.querySelector(".menu-card-title").innerHTML;
-          const itemPrice = this.parentNode.parentNode.querySelector(".menu-item-price").innerHTML.split(" ")[1];
-          const itemImage = this.parentNode.parentNode.parentNode.getElementsByClassName("menu-card-img")[0].getAttribute("src")
-          
-          window.location.href = `order.html?item=${itemName}&price=${itemPrice}&img=${itemImage}`
-        })
+      for (var i = 0; i < items.length; i++) {
+        items[i].addEventListener("click", function () {
+          const itemName =
+            this.parentNode.parentNode.querySelector(
+              ".menu-card-title"
+            ).innerHTML;
+          const itemPrice = this.parentNode.parentNode
+            .querySelector(".menu-item-price")
+            .innerHTML.split(" ")[1];
+          const itemImage = this.parentNode.parentNode.parentNode
+            .getElementsByClassName("menu-card-img")[0]
+            .getAttribute("src");
+
+          window.location.href = `order.html?item=${itemName}&price=${itemPrice}&img=${itemImage}`;
+        });
       }
     </script>
 
-<footer>
-  <div class="row">
-    <div class="col span-1-of-2">
-      <ul class="footer-nav">
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">iOS App</a></li>
-        <li><a href="#">Android App</a></li>
-      </ul>
-    </div>
-
-    <div class="col span-1-of-2">
-      <ul class="social-nav">
-        <div class="footer-nav-icons">
-          <li>
-            <a href="#"><i class="ion-social-facebook"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="ion-social-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="ion-social-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="ion-social-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="ion-social-googleplus"></i></a>
-          </li>
+    <footer>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <ul class="footer-nav">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">iOS App</a></li>
+            <li><a href="#">Android App</a></li>
+          </ul>
         </div>
-      </ul>
+
+        <div class="col span-1-of-2">
+          <ul class="social-nav">
+            <div class="footer-nav-icons">
+              <li>
+                <a href="#"><i class="ion-social-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ion-social-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ion-social-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ion-social-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ion-social-googleplus"></i></a>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <p class="footer-para">
+          Copyright &copy;, 2020 by Veggiefood. All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <div id="scrollToTop">
+      <i class="ion-chevron-up"></i>
     </div>
-
-    <p class="footer-para">
-      Copyright &copy;, 2020 by Veggiefood. All Rights Reserved
-    </p>
-  </div>
-</footer>
-
+    <script>
+      document
+        .getElementById("scrollToTop")
+        .addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
   </body>
 </html>
