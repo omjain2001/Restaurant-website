@@ -216,6 +216,20 @@
             },
             icon: "error",
           });
+        } else {
+          const itemName =
+            document.getElementsByClassName("order-item-name")[0].innerHTML;
+          const itemPrice =
+            document.getElementsByClassName("order-item-price")[0].innerHTML;
+          const itemQtn = document.getElementsByClassName("qtn-input")[0].value;
+          swal({
+            title: "Order placed successfully",
+            text: `Your order for ${itemQtn} ${itemName} is registered. Total cost is ${itemPrice}.\nPayment mode is Cash on Delivery.`,
+            button: {
+              text: "OK",
+            },
+            icon: "success",
+          });
         }
       });
   </script>
